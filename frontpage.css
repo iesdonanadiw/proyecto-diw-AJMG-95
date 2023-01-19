@@ -73,6 +73,8 @@ body {
 }
 
 .wrap-header #userimg{
+    width: 3.75em;
+    height: 3.75em;
     border: solid 1px #00dfc4;
     border-radius: 2em;
 }
@@ -88,6 +90,8 @@ body {
         inset 5px 5px 15px rgba(0, 0, 0, 0.35);
     border-radius: 25px;
     padding: 10px;
+    font-size: x-small;
+
 }
 
 .wrap-header header a:hover {
