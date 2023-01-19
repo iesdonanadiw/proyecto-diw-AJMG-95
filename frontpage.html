@@ -16,7 +16,7 @@
     <div class="container">
         <div class="wrap-header">
             <header>
-                <img src="" alt="">
+                <img src="imgs/logo.png" id="userimg">
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Productos</a></li>
@@ -24,10 +24,7 @@
                     <li><a href="#">Chat de Usuarios</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
-                <p>
-                    username
-                </p>
-                <img src="/imgs/user.png" alt="" id="userimg">
+                <p>username</p><i class="fa-regular fa-user" id="userimg"></i>
             </header>
         </div>
         <div class="wrap-sign">
@@ -35,50 +32,61 @@
                 <h2>Sign Up</h2>
                 <div class="inputBox">
                     <input type="text" required="required">
-                    <i class="fa-regular fa-user"></i>
-                    <span>username</span>
+                    <i class="fa-regular fa-user"></i><span>username</span>
                 </div>
                 <div class="inputBox">
                     <input type="text" required="required">
-                    <i class="fa-regular fa-envelope"></i>
-                    <span>email address</span>
+                    <i class="fa-regular fa-envelope"></i><span>email address</span>
                 </div>
                 <div class="inputBox">
                     <input type="password" required="required">
-                    <i class="fa-solid fa-lock"></i>
-                    <span>Create password</span>
+                    <i class="fa-solid fa-lock"></i><span>Create password</span>
                 </div>
                 <div class="inputBox">
                     <input type="password" required="required">
-                    <i class="fa-solid fa-lock">
-
-                    </i><span>Confirm password</span>
+                    <i class="fa-solid fa-lock"></i><span>Confirm password</span>
                 </div>
                 <div class="inputBox">
                     <input type="submit" value="Create Account"">
                 </div>
-                <p>Already a member ? <a href=" #" class="login">Log in</a></p>
+
+                    <p>Already a member ? <a href=" #" class="login">Log in</a></p>
                 </div>
                 <div class="form signin">
                     <h2>Sign In</h2>
                     <div class="inputBox">
                         <input type="text" required="required">
-                        <i class="fa-regular fa-user"></i>
-                        <span>username</span>
+                        <i class="fa-regular fa-user"></i><span>username</span>
                     </div>
                     <div class="inputBox">
                         <input type="password" required="required">
-                        <i class="fa-solid fa-lock"></i>
-                        <span>password</span>
+                        <i class="fa-solid fa-lock"></i><span>password</span>
                     </div>
                     <div class="inputBox">
                         <input type="submit" value="Login"">
                     </div>
+
                     <p>Not Registered ? <a href=" #" class="create">Create an account</a></p>
                     </div>
                 </div>
-            </div>
+                <div class="wrap-footer">
+                    <footer>
+                        <div class="footer_top">
+                            <ul class="footer_list">
+                                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-telegram"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_bottom">
+                            <span class="copyright"><i class="fa-regular fa-copyright"></i> 2023 Company All rights
+                                reserved</span>
+                        </div>
+                    </footer>
+                </div>
 
+            </div>
             <script>
                 let login = document.querySelector('.login');
                 let create = document.querySelector('.create');
