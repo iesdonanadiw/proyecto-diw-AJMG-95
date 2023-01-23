@@ -19,54 +19,64 @@
                 <img src="imgs/logo.png" id="userimg">
                 <ul>
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Quien somos</a></l>
-                    <li><a href="#">Chat de Usuarios</a></li>
+                    <li><a href="shop.html">Productos</a></li>
+                    <li><a href="aboutus.html">Quien somos</a></l>
                     <li><a href="#">Contacto</a></li>
                 </ul>
-                <p>username</p><i class="fa-regular fa-user" id="userimg"></i>
+                <div class="dropdown">
+                    <span>User Name</span>
+                    <div class="dropdown-content">
+                        <p><a href="frontpage.html">Iniciar sesión</a></p>
+                        <p><a href="dashboard.html">Perfil</a></p>
+                        <p><a href="carrito.html">Carrito</a></p>
+                        <p><a href="cerrar-sesion.html">Cerrar sesión</a></p>
+                    </div>
+                </div>
+                <i class="fa-regular fa-user" id="userimg"></i>
+
+
             </header>
         </div>
         <div class="wrap-sign">
             <div class="form signup">
-                <h2>Sign Up</h2>
+                <h2>Registrarse</h2>
                 <div class="inputBox">
                     <input type="text" required="required">
-                    <i class="fa-regular fa-user"></i><span>username</span>
+                    <i class="fa-regular fa-user"></i><span>Usuario</span>
                 </div>
                 <div class="inputBox">
                     <input type="text" required="required">
-                    <i class="fa-regular fa-envelope"></i><span>email address</span>
+                    <i class="fa-regular fa-envelope"></i><span>Email</span>
                 </div>
                 <div class="inputBox">
                     <input type="password" required="required">
-                    <i class="fa-solid fa-lock"></i><span>Create password</span>
+                    <i class="fa-solid fa-lock"></i><span>Contraseña</span>
                 </div>
                 <div class="inputBox">
                     <input type="password" required="required">
-                    <i class="fa-solid fa-lock"></i><span>Confirm password</span>
+                    <i class="fa-solid fa-lock"></i><span>Confirmar contraseña</span>
                 </div>
                 <div class="inputBox">
                     <input type="submit" value="Create Account"">
                 </div>
 
-                    <p>Already a member ? <a href=" #" class="login">Log in</a></p>
+                    <p>Ya estas suscrito ? <a href=" #" class="login">Iniciar sesión</a></p>
                 </div>
                 <div class="form signin">
-                    <h2>Sign In</h2>
+                    <h2>Iniciar sesión</h2>
                     <div class="inputBox">
                         <input type="text" required="required">
-                        <i class="fa-regular fa-user"></i><span>username</span>
+                        <i class="fa-regular fa-user"></i><span>Usuario</span>
                     </div>
                     <div class="inputBox">
                         <input type="password" required="required">
-                        <i class="fa-solid fa-lock"></i><span>password</span>
+                        <i class="fa-solid fa-lock"></i><span>Contraseña</span>
                     </div>
                     <div class="inputBox">
                         <input type="submit" value="Login"">
                     </div>
 
-                    <p>Not Registered ? <a href=" #" class="create">Create an account</a></p>
+                    <p>No estas suscrito ? <a href=" #" class="create">Crear una cuenta</a></p>
                     </div>
                 </div>
                 <div class="wrap-footer">
@@ -99,6 +109,13 @@
                 create.onclick = function () {
                     wrapsign.classList.remove('signinForm');
                 }
+
+                var dropdownButton = document.getElementById("dropdown-button");
+                var dropdownContent = document.getElementById("dropdown-content");
+
+                dropdownButton.addEventListener("click", function () {
+                    dropdownContent.classList.toggle("hidden");
+                });
             </script>
 </body>
 

@@ -94,9 +94,8 @@ body {
         inset -5px -5px 15px rgba(255, 255, 255, 0.1),
         inset 5px 5px 15px rgba(0, 0, 0, 0.35);
     border-radius: 2em;
-    margin-right: 1.2em;
+    margin-right: 1.2em ;
 }
-
 
 .dropdown {
     position: relative;
@@ -152,8 +151,6 @@ body {
     border-radius: 25px;
     padding: 10px;
 }
-
-
 
 .wrap-sign {
     display: flex;
@@ -295,7 +292,7 @@ body {
     padding: .5em;
 }
 
-.footer_top {
+.footer_top{
     margin-bottom: 20px;
     border-bottom: 3px solid #00dfc4;
 }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrap-header">
+            <header>
+                <img src="imgs/logo.png" id="userimg">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="shop.html">Productos</a></li>
+                    <li><a href="aboutus.html">Quien somos</a></l>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+                <div class="dropdown">
+                    <span>User Name</span>
+                    <div class="dropdown-content">
+                        <p><a href="frontpage.html">Iniciar sesión</a></p>
+                        <p><a href="dashboard.html">Perfil</a></p>
+                        <p><a href="carrito.html">Carrito</a></p>
+                        <p><a href="cerrar-sesion.html">Cerrar sesión</a></p>
+                    </div>
+                </div>
+                <i class="fa-regular fa-user" id="userimg"></i>
+
+
+            </header>
+        </div>
+        <div class="wrap-main">
+            <main>
+                <div class="user-profile">
+                    <div>
+                        <h2>Información Personal</h2>
+                        <ul>
+                            <li><label>Nombre:</label> <span id="name"></span></li>
+                            <li><label>Apellidos:</label> <span id="surname"></span></li>
+                            <li><label>Fecha de Nacimiento:</label> <span id="birthdate"></span></li>
+                            <li><label>Alias:</label> <span id="alias"></span> <button id="modify-alias"><i class="fa-regular fa-pen-to-square"></i></button></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Información de Contacto</h2>
+                        <ul>
+                            <li><label>Telefono:</label> <span id="phone"></span><button id="modify-email"><i class="fa-regular fa-pen-to-square"></i></button></li>
+                            <li><label>Email:</label> <span id="email"></span> </li>
+                            <li><label>Dirección:</label> <span id="address"></span> <button id="modify-address"><i class="fa-regular fa-pen-to-square"></i></button></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Información de Pago</h2>
+                        <ul>
+                            <li>
+                                <label>Tarjeta de Crédito:</label>
+                                <span id="credit-card"></span>
+                            </li>
+                        </ul>
+                        <button id="remove-card">Eliminar</button>
+                    </div>
+
+                </div>
+                <div class="credit-card">
+                    <div>
+                        <h2>Añadir otra tarjeta</h2>
+                        <ul id="new-credit-card">
+                            <li><label>Número de la tarjeta</label><span id="number"></span></li>
+                            <li><label>cvv</label><span id="cvv"></span></li>
+                            <li><label>Caducidad</label><span id="expiration"></span></li>
+                        </ul>
+                        <button id="add-card">Agregar</button>
+                        <button id="add-card">Cancelar</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="wrap-footer">
+            <footer>
+                <div class="footer_top">
+                    <ul class="footer_list">
+                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-telegram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <span class="copyright"><i class="fa-regular fa-copyright"></i> 2023 Company All rights
+                        reserved</span>
+                </div>
+            </footer>
+        </div>
+
+
+</body>
+
+</html>
