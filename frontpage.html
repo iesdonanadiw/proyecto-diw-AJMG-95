@@ -14,28 +14,43 @@
 
 <body>
     <div class="container">
-        <div class="wrap-header">
-            <header>
-                <img src="imgs/logo.png" id="userimg">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="shop.html">Productos</a></li>
-                    <li><a href="aboutus.html">Quien somos</a></l>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-                <div class="dropdown">
-                    <span>User Name</span>
-                    <div class="dropdown-content">
-                        <p><a href="frontpage.html">Iniciar sesión</a></p>
-                        <p><a href="dashboard.html">Perfil</a></p>
-                        <p><a href="carrito.html">Carrito</a></p>
-                        <p><a href="cerrar-sesion.html">Cerrar sesión</a></p>
-                    </div>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+                <div class="nav-title">
+                    <img src="imgs/logo.png" id="userimg">
                 </div>
-                <i class="fa-regular fa-user" id="userimg"></i>
+            </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
 
+            <div class="nav-links">
+                <a href="//github.io/jo_geek" target="_blank">Inicio</a>
+                <a href="http://stackoverflow.com/users/4084003/" target="_blank">Productos</a>
+                <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">Quienes somos</a>
+                <a href="https://codepen.io/jo_Geek/" target="_blank">Contacto</a>
+                <div class="burger">
+                    <div class="dropdown">
+                        <input type="checkbox" id="dropdown-check">
+                        <label for="dropdown-check">
+                            <span>User Name</span>
+                        </label>
+                        <div class="dropdown-content">
+                            <p><a href="frontpage.html">Iniciar sesión</a></p>
+                            <p><a href="dashboard.html">Perfil</a></p>
+                            <p><a href="carrito.html">Carrito</a></p>
+                            <p><a href="cerrar-sesion.html">Cerrar sesión</a></p>
+                        </div>
+                    </div>
+                    <i class="fa-regular fa-user" id="userimg"></i>
 
-            </header>
+                </div>
+            </div>
         </div>
         <div class="wrap-sign">
             <div class="form signup">
@@ -109,13 +124,6 @@
                 create.onclick = function () {
                     wrapsign.classList.remove('signinForm');
                 }
-
-                var dropdownButton = document.getElementById("dropdown-button");
-                var dropdownContent = document.getElementById("dropdown-content");
-
-                dropdownButton.addEventListener("click", function () {
-                    dropdownContent.classList.toggle("hidden");
-                });
             </script>
 </body>
 

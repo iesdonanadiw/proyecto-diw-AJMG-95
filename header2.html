@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .nav {
+            height: 70px;
+            width: 100%;
+            background-color: #223243;
+            position: relative;
+            align-items: center;
+        }
+
+        .nav .nav-header {
+            display: inline;
+            align-items: center;
+        }
+
+        .nav .nav-header .nav-title {
+            display: inline-block;
+            font-size: 22px;
+            color: #fff;
+            padding: 10px 10px 10px 10px;
+        }
+
+        .nav .nav-btn {
+            display: none;
+        }
+
+        .nav .nav-links {
+            display: inline;
+            float: right;
+            font-size: 18px;
+            flex-direction: row;
+
+        }
+        .nav .nav-links .burger,
+        .nav .nav-links a {
+            display: inline-block;
+            padding: 5px 10px 13px 10px;
+            text-decoration: none;
+            font-weight: 500;
+            color: #fff;
+            border-radius: 25px;
+            transition: 0.42s;
+        }
+
+        .nav .nav-links a:hover {
+            background: #00dfc4;
+            color: #223243;
+            font-weight: 500;
+            cursor: pointer;
+            box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+                5px 5px 15px rgba(0, 0, 0, 0.35),
+                inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+                inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+            border-radius: 25px;
+            padding: 10px;
+        }
+
+        .nav #nav-check {
+            display: none;
+        }
+
+
+        .nav-links #userimg,
+        .nav-title #userimg {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            color: #00dfc4;
+            width: 2em;
+            height: 2em;
+            border: solid 1px #00dfc4;
+            box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+                5px 5px 15px rgba(0, 0, 0, 0.35),
+                inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+                inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+            border-radius: 2em;
+            margin-right: 1.2em;
+        }
+
+        .nav-links i {
+            margin-top: 0.75em;
+        }
+
+        .nav a:hover {
+            background: #00dfc4;
+            color: #223243;
+            font-weight: 500;
+            cursor: pointer;
+            box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+                5px 5px 15px rgba(0, 0, 0, 0.35),
+                inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+                inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+            border-radius: 25px;
+            padding: 10px;
+        }
+
+        @media (max-width:600px) {
+            .nav .nav-btn {
+                display: inline-block;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+            }
+
+            .nav .nav-btn label {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                padding: 13px;
+            }
+
+            .nav .nav-btn label:hover,
+            .nav #nav-check:checked~.nav-btn label {
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+
+            .nav .nav-btn label span {
+                display: block;
+                width: 25px;
+                height: 10px;
+                border-top: 2px solid #eee;
+            }
+
+            .nav .nav-links {
+                position: absolute;
+                display: block;
+                width: 100%;
+                background-color: #223243;
+                height: 0px;
+                transition: all 0.3s ease-in;
+                overflow-y: hidden;
+                margin-top: 1em;
+                top: 50px;
+                left: 0px;
+                box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.1),
+                10px 10px 15px rgba(0, 0, 0, 0.35),
+                inset -10px -10px 15px rgba(255, 255, 255, 0.1),
+                inset 10px 10px 15px rgba(0, 0, 0, 0.35);
+            }
+
+            .nav .nav-links a {
+                display: block;
+                width: 100%;
+                margin-top: 1em;
+            }
+
+            .nav #nav-check:not(:checked)~.nav-links {
+                height: 0px;
+            }
+
+            .nav #nav-check:checked~.nav-links {
+                height: calc(100vh - 50px);
+                overflow-y: auto;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                <img src="imgs/logo.png" id="userimg">
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="//github.io/jo_geek" target="_blank">Iniciar sesion</a>
+            <a href="http://stackoverflow.com/users/4084003/" target="_blank">Perfil</a>
+            <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">Carriro</a>
+            <a href="https://codepen.io/jo_Geek/" target="_blank">Cerrar sesion</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
