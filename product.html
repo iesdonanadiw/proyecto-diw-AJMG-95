@@ -9,34 +9,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="css/product.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="wrap-header">
-            <header>
-                <img src="imgs/logo.png" id="userimg">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="shop.html">Productos</a></li>
-                    <li><a href="aboutus.html">Quien somos</a></l>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-                <div class="dropdown">
-                    <span>Usuario</span>
-                    <div class="dropdown-content">
-                        <p><a href="frontpage.html">Iniciar sesión</a></p>
-                        <p><a href="dashboard.html">Perfil</a></p>
-                        <p><a href="carrito.html">Carrito</a></p>
-                        <p><a href="cerrar-sesion.html">Cerrar sesión</a></p>
-                    </div>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+                <div class="nav-title">
+                    <img src="imgs/logo.png" id="userimg">
                 </div>
-                <i class="fa-regular fa-user" id="userimg"></i>
+            </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
 
+            <div class="nav-links">
+                <a href="index.html" target="_blank">Inicio</a>
+                <a href="shop.html" target="_blank">Productos</a>
+                <a href="aboutus.html" target="_blank">Quienes somos</a>
+                <a href="contactus.html" target="_blank">Contacto</a>
+                <div class="burger">
+                    <div class="dropdown">
+                        <input type="checkbox" id="dropdown-check">
+                        <label for="dropdown-check">
+                            <span>User Name</span>
+                        </label>
+                        <div class="dropdown-content">
+                            <p><a href="frontpage.html">Iniciar sesión</a></p>
+                            <p><a href="dashboard.html">Perfil</a></p>
+                            <p><a href="trolley.html">Carrito</a></p>
+                            <p><a href="frontpage.html">Cerrar sesión</a></p>
+                        </div>
+                    </div>
+                    <i class="fa-regular fa-user" id="userimg"></i>
 
-            </header>
+                </div>
+            </div>
         </div>
+
         <div class="wrap-main">
             <div class="card">
                 <div class="imgBx">
