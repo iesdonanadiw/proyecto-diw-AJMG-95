@@ -194,9 +194,9 @@ body {
 }
 
 
-.wrap-main {
+.main {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 80px;
 }
@@ -211,7 +211,9 @@ body {
     overflow: hidden;
     transition: 0.5s ease-in-out;
 }
-
+.main .check{
+    display: none;
+}
 .card:hover {
     width: 800px;
 }
@@ -516,17 +518,19 @@ align-items: center;
         flex-direction: row-reverse;
     }
 
-    .wrap-sign {
+    .main {
         position: absolute;
         display: block;
+        justify-content: space-around;
         width: 100%;
         z-index: -1;
+        cursor: pointer;
     }
 
     .wrap-footer {
         position: fixed;
         bottom: 0vh;
-    }ç
+    }
 
     .dropdown #dropdown-check:checked~.dropdown-content {
         display: block;

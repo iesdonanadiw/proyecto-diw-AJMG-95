@@ -290,13 +290,14 @@ body {
 
 .wrap-sign .form .inputBox i {
     position: absolute;
-    top: 15px;
+    top: 10px;
     left: 16px;
     width: 25px;
     padding: 1.09vh 0;
     padding-right: 8px;
     color: #00dfc4;
-    border-right: 1px solid #00dfc4;
+    border-right: 2px solid #00dfc4;
+    border-radius: 5px;
 }
 
 
