@@ -192,7 +192,7 @@ body {
     border-radius: 25px;
     padding: 10px;
 }
-.wrap-us {
+.wrap-main {
     display: flex;
     justify-content: center;
     width: 400px;
@@ -336,7 +336,7 @@ body {
         flex-direction: row-reverse;
     }
 
-    .wrap-sign {
+    .wrap-main {
         position: absolute;
         display: block;
         width: 100%;
@@ -422,7 +422,7 @@ body {
         flex-direction: row-reverse;
     }
 
-    .wrap-sign {
+    .wrap-main {
         position: relative;
         display: block;
         width: fit-content;

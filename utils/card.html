@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            height: 100vh;
+        }
+
+        .card {
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 650px;
+            height: 380px;
+            padding: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            background-color: rgb(197, 231, 242);
+            border-radius: 20px;
+            margin: 30px 0;
+        }
+
+        .card:hover {
+            box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+            transform: translateY(-10px);
+            transition: all 0.2s ease-in-out;
+        }
+
+        .card .product {
+            justify-content: center;
+            align-items: center;
+            width: 35%;
+        }
+
+        .card .details {
+            display: flex;
+            flex-direction: column;
+            width: 65%;
+            padding: 15px;
+            color:#fff;
+            background: #223243;
+            box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+            5px 5px 15px rgba(0, 0, 0, 0.35),
+            inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+            inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+            border-radius: 20px;
+        }
+
+        .card .details .top-det {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card .details .bot-det {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .card #glasses {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: all 0.2s ease-in-out;
+            transform: rotate(10deg) translateX(-0.5vw) ;
+        }
+
+        .card #gloves {
+            width: 70%;
+            height: auto;
+            border-radius: 10px;
+            transition: all 0.2s ease-in-out;
+            margin-left: 5PX;
+            transform: rotate(10deg) translateX(1vw);
+        }
+
+        .card #glasses:hover {
+            transform: scale(1.3) ;
+        }
+        .card #gloves:hover {
+            transform: scale(1.3) rotate(5deg) translateX(1vw);
+        }
+
+        .card .details h3 {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0;
+            color:#fff;
+        }
+
+        .card .details h3 span {
+            font-size: 20px;
+            font-weight: normal;
+            color:#fff;
+        }
+
+        .card .details h4 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+            color:#fff;
+        }
+
+        .card .details p {
+            font-size: 20px;
+            color:#fff;
+            margin: 0;
+        }
+
+        .card .details ul.size {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .card .details ul.size li {
+            font-size: 20px;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .card .details button {
+            display: inline;
+            padding: 15px 30px;
+            background-color:  #00dfc4;
+            color: #223243;
+            border: none;
+            border-radius: 40px;
+            font-size: 15px;
+            cursor: pointer;
+            margin-left: 20px;
+            transition: all 0.2s ease-in-out;
+            box-shadow:
+            inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+            inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+        }
+
+        .card .details button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+            5px 5px 15px rgba(0, 0, 0, 0.35),
+        }
+
+        @media (max-width: 600px) {
+            .main {
+                flex-direction: column;
+            }
+
+            .card {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .card .product,
+            .card .details {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 1080px) {
+            .main {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .card .details h3 span {
+                font-size: 18px;
+            }
+
+            .card .details ul.size li {
+                font-size: 18px;
+                margin-right: 10px;
+            }
+
+            .card .details button {
+                padding: 10px 20px;
+                font-size: 18px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <main class="main">
+        <section class="card">
+            <div class="product">
+                <img src="../imgs/gafas.png" alt="producto" id="glasses" class="img">
+            </div>
+            <div class="details">
+                <div class="top-det">
+                    <h3>DLT-Glasses <br> <span>v 1.0</span></h3>
+                    <h4>Descripción:</h4>
+                    <p>texto</p>
+                    <h4>Tamaño:</h4>
+                    <ul class="size">
+                        <li>XS</li>
+                        <li>S</li>
+                        <li>M</li>
+                        <li>L</li>
+                        <li>xL</li>
+                    </ul>
+                </div>
+                <div class="bot-det">
+                    <p>Precio: $100</p>
+                    <button>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Añadir al carrito</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <div class="product">
+                <img src="../imgs/gloves.png" alt="producto" id="gloves" class="img">
+            </div>
+            <div class="details">
+                <div class="top-det">
+                    <h3>DLT-Glasses <br> <span>v 1.0</span></h3>
+                    <h4>Descripción:</h4>
+                    <p>texto</p>
+                    <h4>Tamaño:</h4>
+                    <ul class="size">
+                        <li>XS</li>
+                        <li>S</li>
+                        <li>M</li>
+                        <li>L</li>
+                        <li>xL</li>
+                    </ul>
+                </div>
+                <div class="bot-det">
+                    <p>Precio: $100</p>
+                    <button>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Añadir al carrito</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

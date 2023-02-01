@@ -103,21 +103,6 @@ body {
     display: none;
 }
 
-.dropdown span {
-    background: #00dfc4;
-    color: #223243;
-    font-weight: 500;
-    cursor: pointer;
-    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
-        5px 5px 15px rgba(0, 0, 0, 0.35),
-        inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-        inset 5px 5px 15px rgba(0, 0, 0, 0.35);
-    border-radius: 25px;
-    padding: 2px;
-    font-size: x-small;
-    margin-right: 1em;
-    margin-bottom: 1em;
-}
 
 .dropdown a {
     color: #fff;
@@ -154,8 +139,8 @@ body {
         inset 5px 5px 15px rgba(0, 0, 0, 0.35);
     border-radius: 25px;
     padding: 10px;
-    font-size: x-small;
     margin-right: 1em;
+    margin-bottom: 1em;
     font-size: medium;
 }
 
