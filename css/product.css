@@ -263,6 +263,7 @@ body {
 
 .description p {
     width: fit-content;
+    min-height: 330px;
 }
 
 
