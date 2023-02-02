@@ -134,8 +134,7 @@ body {
         inset -5px -5px 15px rgba(255, 255, 255, 0.1),
         inset 5px 5px 15px rgba(0, 0, 0, 0.35);
     padding: 12px 16px;
-    margin-top: .5em;
-    z-index: 1;
+    margin-top: .5em
 
 }
 
@@ -363,7 +362,6 @@ body {
     .nav .nav-btn label:hover,
     .nav #nav-check:checked~.nav-btn label {
         background-color: rgba(0, 0, 0, 0.3);
-        z-index: 1;
     }
 
     .nav .nav-btn label span {
@@ -404,6 +402,7 @@ body {
     .nav #nav-check:checked~.nav-links {
         height: calc(100vh - 50px);
         overflow-y: auto;
+        z-index: 1;
     }
 
     .nav .nav-links .burger {
@@ -416,8 +415,7 @@ body {
     .main {
         position: absolute;
         display: block;
-        width: 100%;
-        z-index: -1;
+        width: 100%;;
     }
 
     .wrap-footer {
@@ -449,7 +447,6 @@ body {
     .nav .nav-btn label:hover,
     .nav #nav-check:checked~.nav-btn label {
         background-color: rgba(0, 0, 0, 0.3);
-        z-index: 1;
     }
 
     .nav .nav-btn label span {
@@ -490,6 +487,7 @@ body {
     .nav #nav-check:checked~.nav-links {
         height: calc(100vh - 50px);
         overflow-y: auto;
+        z-index: 1;
     }
 
     .nav .nav-links .burger {
@@ -502,8 +500,7 @@ body {
     .main {
         position: relative;
         display: block;
-        width: fit-content;
-        z-index: -1;
+        width: fit-content;;
     }
 
     .wrap-footer {
