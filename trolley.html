@@ -41,7 +41,7 @@
                             <span>User Name</span>
                         </label>
                         <div class="dropdown-content">
-                            <p><a href="log.html">Iniciar/Cerrar sesión</a></p>
+                            <p><a href="signin.html">Iniciar/Cerrar sesión</a></p>
                             <p><a href="dashboard.html">Perfil</a></p>
                             <p><a href="trolley.html">Carrito</a></p>
                         </div>
@@ -52,11 +52,56 @@
             </div>
         </div>
 
-        <div class="wrap-main">
-            <main>
-
-            </main>
-        </div>
+        <main class="main">
+            <section class="left-side">
+                <h2>Carrito de compras</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio por unidad</th>
+                            <th>Unidades</th>
+                            <th>Coste total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Producto 1</td>
+                            <td>$10</td>
+                            <td>2</td>
+                            <td>$20</td>
+                            <td>
+                                <button class="add-btn">+</button>
+                                <button class="remove-btn">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Producto 2</td>
+                            <td>$5</td>
+                            <td>1</td>
+                            <td>$5</td>
+                            <td>
+                                <button class="add-btn">+</button>
+                                <button class="remove-btn">-</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="actions">
+                    <button class="empty-cart-btn">Vaciar carrito</button>
+                </div>
+            </section>
+            <section class="right-side">
+                <h2>Seleccionar tarjeta de pago</h2>
+                <select>
+                    <option value="tarjeta1">Tarjeta 1</option>
+                    <option value="tarjeta2">Tarjeta 2</option>
+                    <option value="tarjeta3">Tarjeta 3</option>
+                </select>
+                <button class="checkout-btn">Realizar compra</button>
+            </section>
+        </main>
         <div class="wrap-footer">
             <footer>
                 <div class="footer_top">

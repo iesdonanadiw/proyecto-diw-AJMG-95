@@ -193,62 +193,89 @@ body {
     padding: 10px;
 }
 
+
+
 .wrap-main {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    padding: 1vh;
-    margin: 5vh;
-    color: rgb(240, 241, 248);
+    align-items: center;
+    height: auto;
+    color: #fff;
+}
+
+#sc {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+#slogan {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 1em;
+
 }
 
 .top-main {
-
-}
-
-.sc {
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
     text-align: center;
+    margin-bottom: 2em;
 }
 
-.slogan {
-    font-family: Georgia, serif;
-    font-size: 16px;
-    font-style: italic;
-    text-align: center;
-}
-
-.wrap-main .bot-main {
+.bot-main {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.bot-main h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+
+}
+
+.proimg {
+    display: flex;
     justify-content: center;
-    margin-bottom: 1vh;
+    background: linear-gradient(to bottom right, rgba(34, 50, 67, 0.5),  rgba(31, 202, 208, 0.8), rgba(32, 125, 137, 0.5));
+    padding: 1em;
+    border-radius: 25px;
 }
 
+.proimg:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
 
-.bot-main figure section {
-    width: 100%;
-    justify-content: center;
-    display: inline-flex;
-    flex-direction: row-reverse;
-    align-items: baseline;
 }
 
-.wrap-main .bot-main .gloves img {
-    width: 10vw;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+.gloves img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    transition: all 0.3s ease-in-out;
 }
 
-.wrap-main .bot-main .glasses img{
-    width: 20vw;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+.gloves img:hover {
+    transform: scale(1.1);
 }
+
+.glasses img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    transition: all 0.3s ease-in-out;
+}
+
+.glasses img:hover {
+    transform: scale(1.1);
+}
+
+.bot-main figcaption {
+    font-size: 1.2em;
+    text-align: center;
+}
+
 
 .wrap-footer {
     position: absolute;
@@ -376,11 +403,15 @@ body {
         flex-direction: row-reverse;
     }
 
-    .wrap-main {
-        position: absolute;
-        display: block;
-        width: 100%;
-        z-index: -1;
+
+    .gloves img,
+    .glasses img {
+        width: 200px;
+        height: 200px;
+    }
+
+    figcaption {
+        font-size: 1em;
     }
 
     .wrap-footer {
@@ -388,7 +419,7 @@ body {
         bottom: 0vh;
     }
 
-    ç .dropdown #dropdown-check:checked~.dropdown-content {
+    .dropdown #dropdown-check:checked~.dropdown-content {
         display: block;
     }
 
@@ -462,11 +493,14 @@ body {
         flex-direction: row-reverse;
     }
 
-    .wrap-main {
-        position: relative;
-        display: block;
-        width: fit-content;
-        z-index: -1;
+    .gloves img,
+    .glasses img {
+        width: 250px;
+        height: 250px;
+    }
+
+    figcaption {
+        font-size: 1.1em;
     }
 
     .wrap-footer {

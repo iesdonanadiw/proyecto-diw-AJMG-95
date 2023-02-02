@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/signin.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+                <div class="nav-title">
+                    <img src="imgs/logo.png" id="userimg">
+                </div>
+            </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="product.html">Productos</a>
+                <a href="aboutus.html">Quienes somos</a>
+                <a href="contactus.html">Contacto</a>
+                <div class="burger">
+                    <div class="dropdown">
+                        <input type="checkbox" id="dropdown-check">
+                        <label for="dropdown-check">
+                            <span>User Name</span>
+                        </label>
+                        <div class="dropdown-content">
+                            <p><a href="signin.html">Iniciar/Cerrar sesión</a></p>
+                            <p><a href="dashboard.html">Perfil</a></p>
+                            <p><a href="trolley.html">Carrito</a></p>
+                        </div>
+                    </div>
+                    <i class="fa-regular fa-user" id="userimg"></i>
+
+                </div>
+            </div>
+        </div>
+        <div class="wrap-sign">
+                <div class="form signin">
+                    <h2>Iniciar sesión</h2>
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <i class="fa-regular fa-user"></i><span>Usuario</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" required="required">
+                        <i class="fa-solid fa-lock"></i><span>Contraseña</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Login"">
+                    </div>
+
+                    <p>No estas suscrito ? <a href="signup.html" class="create">Crear una cuenta</a></p>
+                    </div>
+                </div>
+                <div class="wrap-footer">
+                    <footer>
+                        <div class="footer_top">
+                            <ul class="footer_list">
+                                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-telegram"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_bottom">
+                            <span class="copyright"><i class="fa-regular fa-copyright"></i> 2023 Company All rights
+                                reserved</span>
+                        </div>
+                    </footer>
+                </div>
+
+            </div>
+</body>
+
+</html>

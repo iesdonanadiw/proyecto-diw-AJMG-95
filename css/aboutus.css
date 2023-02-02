@@ -195,19 +195,41 @@ body {
 .wrap-main {
     display: flex;
     justify-content: center;
-    width: 400px;
+    flex-direction: column;
+    max-height: 100vh;
     padding: 25px;
-    border-radius: 20px;
-    border: 8px solid #223243;
-    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
-        5px 5px 15px rgba(0, 0, 0, 0.35),
-        inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-        inset 5px 5px 15px rgba(0, 0, 0, 0.35);
-    margin: auto;
-    margin-bottom: 40px;
-    margin-top: 40px;
 }
 
+.group {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items:center;
+    padding: 1em;
+    border-radius: 25px;
+    color: #fff;
+}
+
+.group img {
+    width: 250px;
+    height: fit-content;
+    object-fit: contain;
+    margin-right: 10px;
+    background-color:rgb(197, 231, 242)
+}
+
+
+.aboutus {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: auto;
+    max-height: 500px;
+    color: #fff;
+}
 
 
 .wrap-footer {

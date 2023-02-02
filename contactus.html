@@ -41,7 +41,7 @@
                             <span>User Name</span>
                         </label>
                         <div class="dropdown-content">
-                            <p><a href="log.html">Iniciar/Cerrar sesión</a></p>
+                            <p><a href="signin.html">Iniciar/Cerrar sesión</a></p>
                             <p><a href="dashboard.html">Perfil</a></p>
                             <p><a href="trolley.html">Carrito</a></p>
                         </div>
@@ -52,9 +52,33 @@
             </div>
         </div>
 
-        <div class="wrap-main">
+        <main class="main">
+            <section class="info">
+                <div class="inputBox">
+                    <label for="email">Email de la empresa:</label>
+                    <input type="email" id="email" name="email" value="info@empresa.com" readonly>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="inputBox">
+                    <label for="tel">Teléfono de la empresa:</label>
+                    <input type="tel" id="tel" name="tel" value="+34123456789" readonly>
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="inputBox">
+                    <label for="location">Localización de la empresa:</label>
+                    <input type="text" id="location" name="location" value="España, Andalucía, Cádiz, 11540" readonly>
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                </div>
+            </section>
+            <section class="map">
+                <section class="map">
+                    <iframe src="https://maps.google.com/maps?q=Sanl%C3%BAcar%20de%20Barrameda%2C%20Andaluc%C3%ADa%2C%20Espa%C3%B1a&t=&z=13&ie=UTF8&iwloc=&output=embed">
+                    </iframe>
+                  </section>
 
-        </div>
+            </section>
+
+        </main>
         <div class="wrap-footer">
             <footer>
                 <div class="footer_top">
