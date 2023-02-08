@@ -131,11 +131,11 @@ body {
         inset 5px 5px 15px rgba(0, 0, 0, 0.35);
     padding: 12px 16px;
     margin-top: .5em
-
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+    z-index: 1;
 }
 
 .dropdown span {
@@ -154,8 +154,8 @@ body {
     font-size: medium;
 }
 
-.nav-links #userimg,
-.nav-title #userimg {
+.nav-links .fa-user,
+.nav-title .userimg {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -194,6 +194,8 @@ body {
     text-decoration: none;
     transition: 0.42s;
     background-color: #223243;
+    padding: 5px;
+    border-radius: 25px;
 }
 
 .main button:hover {
@@ -364,7 +366,6 @@ body {
 .footer_top i {
     font-size: 1em;
     color: #00dfc4;
-    padding: reverse;
     padding-left: 4%;
     margin-right: 7px;
     margin-left: 7px;
@@ -474,15 +475,43 @@ body {
     .main {
         position: absolute;
         display: block;
-        width: 100%;;
+        width: 100%;
     }
+
+
+    .main,
+    .user,
+    .contact-info,
+    .self-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .current-card,
+    .new-card {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        margin-left: 40px;
+    }
+
+    .main button {
+        margin: 5px;
+    }
+
+
+
 
     .wrap-footer {
         position: fixed;
         bottom: 0vh;
     }
 
-    ç .dropdown #dropdown-check:checked~.dropdown-content {
+    .dropdown #dropdown-check:checked~.dropdown-content {
         display: block;
     }
 
@@ -559,7 +588,8 @@ body {
     .main {
         position: relative;
         display: block;
-        width: fit-content;;
+        width: fit-content;
+        ;
     }
 
     .wrap-footer {

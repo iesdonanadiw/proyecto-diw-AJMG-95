@@ -158,8 +158,8 @@ body {
     font-size: medium;
 }
 
-.nav-links #userimg,
-.nav-title #userimg {
+.nav-links .fa-user,
+.nav-title .userimg {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -198,7 +198,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto;
     color: #fff;
 }
 
@@ -211,35 +210,35 @@ body {
 #slogan {
     font-size: 1.2em;
     font-style: italic;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 
 }
 
 .top-main {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin-bottom: 2em;
+    margin-top: 20px;
 }
 
 .bot-main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    height: 100%;
+    margin-top: 12px;
 }
 
 .bot-main h2 {
     font-size: 1.5em;
-    margin-bottom: 1em;
-
 }
 
 .proimg {
     display: flex;
-    justify-content: center;
-    background: linear-gradient(to bottom right, rgba(34, 50, 67, 0.5),  rgba(31, 202, 208, 0.8), rgba(32, 125, 137, 0.5));
-    padding: 1em;
+    justify-content: space-around;
+    background: linear-gradient(to bottom right, rgba(34, 50, 67, 0.5), rgba(31, 202, 208, 0.8), rgba(32, 125, 137, 0.5));
     border-radius: 25px;
+    margin-top: 20px;
+
 }
 
 .proimg:hover {
@@ -273,6 +272,7 @@ body {
 .bot-main figcaption {
     font-size: 1.2em;
     text-align: center;
+    margin-top: 20px;
 }
 
 
@@ -295,7 +295,6 @@ body {
 .footer_top i {
     font-size: 1em;
     color: #00dfc4;
-    padding: reverse;
     padding-left: 4%;
     margin-right: 7px;
     margin-left: 7px;
@@ -403,15 +402,32 @@ body {
         flex-direction: row-reverse;
     }
 
+    .wrap-main {
+        margin: 5px;
+    }
 
-    .gloves img,
-    .glasses img {
+    .wrap-main .top-main {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .wrap-main .bot-main {
+        margin-top: 4vh;
+        margin: 10px;
+    }
+
+    .wrap-main .bot-main .proimg  img  {
         width: 200px;
         height: 200px;
     }
 
-    figcaption {
-        font-size: 1em;
+    .bot-main h2 {
+        text-align: center;
+    }
+
+    .proimg {
+        height: 300px;
+        align-items: center;
+        object-fit: contain;
     }
 
     .wrap-footer {
@@ -494,14 +510,32 @@ body {
         flex-direction: row-reverse;
     }
 
-    .gloves img,
-    .glasses img {
-        width: 250px;
-        height: 250px;
+    .wrap-main {
+        margin: 5px;
     }
 
-    figcaption {
-        font-size: 1.1em;
+    .wrap-main .top-main {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .wrap-main .bot-main {
+        margin-top: 4vh;
+        margin: 10px;
+    }
+
+    .wrap-main .bot-main .proimg  img  {
+        width: 200px;
+        height: 200px;
+    }
+
+    .bot-main h2 {
+        text-align: center;
+    }
+
+    .proimg {
+        height: 300px;
+        align-items: center;
+        object-fit: contain;
     }
 
     .wrap-footer {

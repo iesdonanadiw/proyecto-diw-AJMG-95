@@ -143,8 +143,8 @@ body {
     font-size: medium;
 }
 
-.nav-links #userimg,
-.nav-title #userimg {
+.nav-links .fa-user,
+.nav-title .userimg {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -202,15 +202,7 @@ body {
     gap: 25px;
 }
 
-.wrap-sign .form.signin,
-.wrap-sign.signinForm .form.signup {
-    display: none;
-}
 
-.wrap-sign.signinForm .form.signin {
-    display: flex;
-
-}
 
 
 .wrap-sign .form h2 {
@@ -327,7 +319,6 @@ body {
 .footer_top i {
     font-size: 1em;
     color: #00dfc4;
-    padding: reverse;
     padding-left: 4%;
     margin-right: 7px;
     margin-left: 7px;
