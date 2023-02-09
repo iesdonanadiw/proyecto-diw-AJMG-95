@@ -520,7 +520,7 @@ body {
     .main {
         flex-direction: column;
         margin: auto;
-        height: 90vh;
+        height: 120vh;
     }
 
     .info {
