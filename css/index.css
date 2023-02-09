@@ -229,7 +229,8 @@ body {
 }
 
 .bot-main h2 {
-    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 0.1em;
 }
 
 .proimg {
@@ -422,6 +423,8 @@ body {
 
     .bot-main h2 {
         text-align: center;
+        font-weight: 500;
+        letter-spacing: 0.1em;
     }
 
     .proimg {
@@ -530,6 +533,8 @@ body {
 
     .bot-main h2 {
         text-align: center;
+        font-weight: 500;
+        letter-spacing: 0.1em;
     }
 
     .proimg {
