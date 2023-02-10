@@ -188,6 +188,30 @@ body {
     padding: 10px;
 }
 
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    object-fit: contain;
+    color: #fff;
+    font-weight: 300;
+    padding-top: 1vw;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.main .dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    width: 100%;
+}
+
+
 .main button {
     font-weight: 500;
     color: #fff;
@@ -209,18 +233,6 @@ body {
         inset 5px 5px 15px rgba(0, 0, 0, 0.35);
     border-radius: 25px;
     padding: 1px;
-}
-
-
-.main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    justify-items: first baseline;
-    color: #fff;
-    font-weight: 300;
-    padding-top: 1vw;
-    font-size: 1em;
 }
 
 .main section {
@@ -340,7 +352,6 @@ body {
     width: fit-content;
     border-right: 5px solid #00dfc4;
     border-radius: 25px;
-    margin-right: 3.5vw;
     box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
         5px 5px 15px rgba(0, 0, 0, 0.35),
         inset -5px -5px 15px rgba(255, 255, 255, 0.1),
@@ -404,7 +415,7 @@ body {
 }
 
 
-@media (max-width:600px) {
+@media (max-width:760px) {
     .nav .nav-btn {
         display: inline-block;
         position: absolute;
@@ -472,38 +483,39 @@ body {
         flex-direction: row-reverse;
     }
 
-    .main {
-        position: absolute;
-        display: block;
-        width: 100%;
-    }
 
 
     .main,
-    .user,
-    .contact-info,
-    .self-info {
+    .main .dashboard,
+    .main .dashboard .user,
+    .main .dashboard .card {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
     }
 
+    .main .dashboard .user,
+    .main .dashboard .card {
+        margin-bottom: 30px;
+    }
 
-    .current-card,
-    .new-card {
+    .main .dashboard .user {
         display: flex;
         flex-direction: column;
-        justify-content:center;
-        align-items: center;
-        margin-left: 40px;
+        width: 100%;
+
+    }
+
+    .dashboard .line {
+        display: none;
     }
 
     .main button {
         margin: 5px;
     }
-
-
 
 
     .wrap-footer {
@@ -585,12 +597,45 @@ body {
         flex-direction: row-reverse;
     }
 
-    .main {
-        position: relative;
-        display: block;
-        width: fit-content;
-        ;
+    .main,
+    .main .dashboard,
+    .main .dashboard .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
     }
+
+    .main .dashboard .user,
+    .main .dashboard .card {
+        margin-bottom: 30px;
+    }
+
+
+    .main .dashboard .user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 7vw;
+        width: 80%;
+
+    }
+
+    .main .dashboard .user .inputBox {
+        justify-self: unset;
+
+    }
+
+    .dashboard .line {
+        display: none;
+    }
+
+    .main button {
+        margin: 5px;
+    }
+
 
     .wrap-footer {
         position: fixed;
@@ -601,5 +646,30 @@ body {
     .dropdown #dropdown-check:checked~.dropdown-content {
         display: block;
     }
+
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1500px) {
+
+    .main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .dashboard .user {
+        display: inline-flex;
+        flex-direction: row;
+        margin: 10px auto 30px auto;
+    }
+    .main .inputBox i {
+        padding: 0.6vh 0;
+
+    }
+
+    .main .dashboard .line {
+        display: none;
+    }
+
 
 }

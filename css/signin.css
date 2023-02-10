@@ -433,6 +433,7 @@ body {
         position: absolute;
         display: block;
         width: 100%;
+        max-height: 100vh;
     }
 
     .wrap-footer {
@@ -520,6 +521,7 @@ body {
         position: relative;
         display: block;
         width: fit-content;
+        margin-top: 14vh;
     }
 
 

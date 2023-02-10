@@ -54,82 +54,85 @@
 
 
         <main class="main">
-            <section class="user">
-                <form class="self-info">
-                    <h2>Información Personal</h2>
-                    <div class="inputBox">
-                        <input type="text" readonly value="User Name">
-                        <i class="fa-regular fa-user"></i><span>Nombre</span>
+            <h1>Información</h1>
+            <div class="dashboard">
+                <section class="user">
+                    <form class="self-info">
+                        <h2>Personal</h2>
+                        <div class="inputBox">
+                            <input type="text" readonly value="User Name">
+                            <i class="fa-regular fa-user"></i><span>Nombre</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" readonly value="User Surname">
+                            <i class="fa-regular fa-user"></i><span>Apellidos</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="date" readonly value="1995-09-27">
+                            <i class="fa-regular fa-calendar-days"></i><span>Fecha de Nacimiento</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" value="User Alias">
+                            <i class="fa-solid fa-signature"></i><span>Alias</span>
+                            <i class="fa-regular fa-pen-to-square modify"></i>
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" value="User Password">
+                            <i class="fa-solid fa-lock"></i><span>Contraseña</span>
+                            <i class="fa-regular fa-pen-to-square modify"></i>
+                        </div>
+                    </form>
+                    <form class="contact-info">
+                        <h2>De Contacto</h2>
+                        <div class="inputBox">
+                            <input type="text" value="User Phone">
+                            <i class="fa-solid fa-phone"></i><span>Teléfono</span>
+                            <i class="fa-regular fa-pen-to-square modify"></i>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" readonly value="User Mail">
+                            <i class="fa-solid fa-envelope"></i><span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" value="User Direction">
+                            <i class="fa-regular fa-user"></i><span>Dirección</span>
+                            <i class="fa-regular fa-pen-to-square modify"></i>
+                        </div>
+                    </form>
+                </section>
+                <section class="line"></section>
+                <section class="card">
+                    <div class="current-card">
+                        <h2>De Pago</h2>
+                        <div class="inputBox">
+                            <input type="tel" readonly value="User Credit Card">
+                            <i class="fa-brands fa-cc-visa"></i><span>Tarjeta de Crédito</span>
+                        </div>
+                        <button id="remove-card">Eliminar</button>
                     </div>
-                    <div class="inputBox">
-                        <input type="text" readonly value="User Surname">
-                        <i class="fa-regular fa-user"></i><span>Apellidos</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="date" readonly value="1995-09-27">
-                        <i class="fa-regular fa-calendar-days"></i><span>Fecha de Nacimiento</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="text" value="User Alias" >
-                        <i class="fa-solid fa-signature"></i><span>Alias</span>
-                        <i class="fa-regular fa-pen-to-square modify"></i>
-                    </div>
-                    <div class="inputBox">
-                        <input type="password" value="User Password">
-                        <i class="fa-solid fa-lock"></i><span>Contraseña</span>
-                        <i class="fa-regular fa-pen-to-square modify"></i>
-                    </div>
-                </form>
-                <form class="contact-info">
-                    <h2>Información de Contacto</h2>
-                    <div class="inputBox">
-                        <input type="text" value="User Phone">
-                        <i class="fa-solid fa-phone"></i><span>Teléfono</span>
-                        <i class="fa-regular fa-pen-to-square modify"></i>
-                    </div>
-                    <div class="inputBox">
-                        <input type="text" readonly value="User Mail">
-                        <i class="fa-solid fa-envelope"></i><span>Email</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="text" value="User Direction">
-                        <i class="fa-regular fa-user"></i><span>Dirección</span>
-                        <i class="fa-regular fa-pen-to-square modify"></i>
-                    </div>
-                </form>
-            </section>
-            <section class="line"></section>
-            <section class="card">
-                <div class="current-card">
-                    <h2>Información de Pago</h2>
-                    <div class="inputBox">
-                        <input type="tel" readonly value="User Credit Card">
-                        <i class="fa-brands fa-cc-visa"></i><span>Tarjeta de Crédito</span>
-                    </div>
-                    <button id="remove-card">Eliminar</button>
-                </div>
 
-                <form class="new-card">
-                    <h2>Añadir otra tarjeta</h2>
-                    <div class="inputBox">
-                        <input type="tel">
-                        <i class="fa-solid fa-credit-card"></i><span>Número de la tarjeta</span>
-                        <i class="fa-regular fa-pen-to-square modify"></i>
-                    </div>
-                    <div class="inputBox">
-                        <input type="tel">
-                        <p class="fa">CVV</p><span>cvv</span>
-                        <i class="fa-regular fa-pen-to-square modify"></i>
-                    </div>
-                    <div class="inputBox">
-                        <input type="tel">
-                        <i class="fa-regular fa-calendar-days"></i><span>Caducidad</span>
-                        <i class="fa-regular fa-pen-to-square modify"></i>
-                    </div>
-                    <button id="add-card">Agregar</button>
-                    <button id="cancel-card">Cancelar</button>
-                </form>
-            </section>
+                    <form class="new-card">
+                        <h2>Añadir otra tarjeta</h2>
+                        <div class="inputBox">
+                            <input type="tel">
+                            <i class="fa-solid fa-credit-card"></i><span>Número de la tarjeta</span>
+                            <i class="fa-regular fa-pen-to-square modify"></i>
+                        </div>
+                        <div class="inputBox">
+                            <input type="tel">
+                            <p class="fa">CVV</p><span>cvv</span>
+                            <i class="fa-regular fa-pen-to-square modify"></i>
+                        </div>
+                        <div class="inputBox">
+                            <input type="tel">
+                            <i class="fa-regular fa-calendar-days"></i><span>Caducidad</span>
+                            <i class="fa-regular fa-pen-to-square modify"></i>
+                        </div>
+                        <button id="add-card">Agregar</button>
+                        <button id="cancel-card">Cancelar</button>
+                    </form>
+                </section>
+            </div>
         </main>
         <div class="wrap-footer">
             <footer>
