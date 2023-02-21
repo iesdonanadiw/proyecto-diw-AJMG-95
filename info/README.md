@@ -11,7 +11,8 @@
 
 ## DESCRIPCIÓN<a name="id1"></a>
 
-[Incluye la descripción de tu proyecto.]
+Se pretende hacer una página web intuitiva y moderna enfocada a personas sordas.
+En esta página se ofertan dos productos cuya finalidad es facilitar la inclusión social de las personas sordas salvando la barrera de la comunicación hablada y la comunicación mediante legua de signos española.
 
 ## PROTOTIPO<a name="id2"></a>
 
