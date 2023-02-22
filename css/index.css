@@ -338,6 +338,19 @@ body {
     flex-wrap: wrap;
 }
 
+@media (max-width:400px) {
+    .glasses {
+        display: none;
+    }
+
+    .proimg .gloves img {
+        align-self: center;
+        width: 100px;
+    }
+
+
+}
+
 @media (max-width:600px) {
     .nav .nav-btn {
         display: inline-block;
