@@ -175,6 +175,10 @@ body {
     margin-right: 1.2em;
 }
 
+.nav-title .userimg {
+    padding: 2px;
+}
+
 .nav-links i {
     margin-top: 0.75em;
 }
@@ -332,6 +336,19 @@ body {
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
+}
+
+@media (max-width:400px) {
+    .glasses {
+        display: none;
+    }
+
+    .proimg .gloves img {
+        align-self: center;
+        width: 100px;
+    }
+
+
 }
 
 @media (max-width:600px) {

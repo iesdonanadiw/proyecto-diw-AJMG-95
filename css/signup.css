@@ -160,6 +160,10 @@ body {
     margin-right: 1.2em;
 }
 
+.nav-title .userimg {
+    padding: 2px;
+}
+
 .nav-links i {
     margin-top: 0.75em;
 }
@@ -356,6 +360,17 @@ body {
     gap: 20px;
     flex-wrap: wrap;
 }
+
+
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    filter: opacity(0.5); /* Ajusta la opacidad aquí */
+  }
 
 @media (max-width:600px) {
     .nav .nav-btn {

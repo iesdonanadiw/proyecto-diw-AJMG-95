@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login & Registration Form</title>
+    <title>Productos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/product.css">
+    <link rel="icon" type="image/png" href="media/imagenes/favicon.ico">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
             <input type="checkbox" id="nav-check">
             <div class="nav-header">
                 <div class="nav-title">
-                    <img src="imgs/logo.png" class="userimg" alt="logo">
+                    <img src="media/imagenes/logotipo.svg" class="userimg" alt="logo">
                 </div>
             </div>
             <div class="nav-btn">
@@ -54,7 +55,10 @@
         <main class="main">
             <section class="card">
                 <div class="product">
-                    <img src="imgs/gafas.png" alt="producto" id="glasses" class="img">
+                    <picture>
+                        <source media="(min-width: )" srcset="">
+                        <img src="media/imagenes/gafas.png" alt="producto" id="glasses" class="img">
+                    </picture>
                 </div>
                 <div class="details">
                     <div class="top-det">
@@ -63,9 +67,11 @@
                         <div class="description">
                             <p>
                                 Dispositivo interactivo en forma de gafas que incorpora un sistema de hardware y
-                                software destinados al reconocimiento, interpretación y traducción hacia el usuario.<br> <br>
+                                software destinados al reconocimiento, interpretación y traducción hacia el usuario.<br>
+                                <br>
                                 Dicho sistema reconoce tanto la lengua de signos española (LSE) mediante un sistema
-                                de reconocimiento visual, como el lenguaje verbal mediante un sistema de reconocimiento de audio. <br> <br>
+                                de reconocimiento visual, como el lenguaje verbal mediante un sistema de reconocimiento
+                                de audio. <br> <br>
                                 Esta traducción se remite al usuario en forma de texto plano proyectado sobre la
                                 lente de las gafas.
                             </p>
@@ -92,7 +98,10 @@
             </section>
             <section class="card">
                 <div class="product">
-                    <img src="imgs/gloves.png" alt="producto" id="gloves" class="img">
+                    <picture>
+                        <source media="(min-width: )" srcset="">
+                        <img src="media/imagenes/gloves.png" alt="producto" id="gloves" class="img">
+                    </picture>
                 </div>
                 <div class="details">
                     <div class="top-det">
@@ -129,6 +138,10 @@
         </main>
 
         <div class="wrap-footer">
+            <audio autoplay loop>
+                <source src="media/audios/bk-sound.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
             <footer>
                 <div class="footer_top">
                     <ul class="footer_list">
